@@ -39,443 +39,487 @@
       </div>
     </header>
 
-    <main class="page-shell">
-      <section class="hero" aria-labelledby="page-title">
-        <div>
-          <p class="eyebrow">Inspiration repas</p>
-          <h1 id="page-title">Des repas simples qui remplissent tous tes cercles</h1>
-          <p class="intro">
-            Matin, midi, 4h et soir : des exemples concrets, équilibrés et rassasiants pour
-            couvrir tes protéines, glucides, lipides et fibres sans réfléchir. Pioche une idée
-            quand l’inspiration manque.
-          </p>
+    <main>
+      <section
+        class="hero-screen"
+        aria-labelledby="page-title"
+        data-bg="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1800&q=70"
+      >
+        <div class="hero-screen-inner">
+          <div>
+            <p class="eyebrow">Inspiration repas</p>
+            <h1 id="page-title">Des repas simples qui remplissent tous tes cercles</h1>
+            <p class="intro">
+              Matin, midi, 4h et soir : des exemples concrets, équilibrés et rassasiants pour
+              couvrir tes protéines, glucides, lipides et fibres sans réfléchir. Pioche une idée
+              quand l'inspiration manque.
+            </p>
+          </div>
+          <aside class="goals-card" aria-label="Repères de la journée">
+            <span>Objectif calorique</span>
+            <strong>2119 kcal / jour</strong>
+            <span>Macros du jour</span>
+            <strong>P 159 · G 201 · L 71 · F 21</strong>
+            <span>Répartition</span>
+            <strong>4 repas</strong>
+          </aside>
         </div>
-        <aside class="goals-card" aria-label="Repères de la journée">
-          <span>Objectif calorique</span>
-          <strong>2119 kcal / jour</strong>
-          <span>Macros du jour</span>
-          <strong>P 159 · G 201 · L 71 · F 21</strong>
-          <span>Répartition</span>
-          <strong>4 repas</strong>
-        </aside>
+        <a class="scroll-cue" href="#matin-title">
+          <span>Découvrir</span>
+          <span class="arrow" aria-hidden="true"></span>
+        </a>
       </section>
 
-      <section class="meal-block" aria-labelledby="matin-title">
-        <div class="meal-block-head">
-          <span class="meal-time">7h – 9h</span>
-          <h2 id="matin-title">Le matin</h2>
-          <p>
-            Objectif : des protéines dès le réveil pour la satiété, des glucides complets pour
-            l’énergie et une source de bons lipides. C’est le repas qui évite le coup de faim
-            de 11h.
-          </p>
-        </div>
-        <div class="meal-grid">
-          <article class="meal-card">
-            <figure class="meal-photo" data-emoji="🍳">
-              <img
-                src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=900&q=70&fm=jpg&fit=crop"
-                alt="Tartine de pain complet avec avocat et œuf poché"
-                loading="lazy"
-                onerror="this.style.display='none'"
-              />
-            </figure>
-            <div class="meal-body">
-              <h3>Tartines avocat et œufs</h3>
-              <ul class="meal-ingredients">
-                <li>2 œufs (brouillés, pochés ou au plat)</li>
-                <li>2 tranches de pain complet (≈ 60 g)</li>
-                <li>½ avocat écrasé</li>
-                <li>1 kiwi ou une poignée de fruits rouges</li>
-              </ul>
-              <p class="meal-kcal">≈ 460 kcal</p>
-              <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 75; --c: #f28f8f">
-                  <span class="ring"><b>22 g</b></span>
-                  <span class="macro-label">Protéines</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 60; --c: #38a38d">
-                  <span class="ring"><b>38 g</b></span>
-                  <span class="macro-label">Glucides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 80; --c: #ecc94b">
-                  <span class="ring"><b>20 g</b></span>
-                  <span class="macro-label">Lipides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 70; --c: #b28e63">
-                  <span class="ring"><b>9 g</b></span>
-                  <span class="macro-label">Fibres</span>
+      <div class="page-shell">
+        <section class="meal-block" aria-labelledby="matin-title">
+          <div class="meal-block-head">
+            <span class="meal-time">7h – 9h</span>
+            <h2 id="matin-title">Le matin</h2>
+            <p>
+              Objectif : des protéines dès le réveil pour la satiété, des glucides complets pour
+              l'énergie et une source de bons lipides. C'est le repas qui évite le coup de faim
+              de 11h.
+            </p>
+          </div>
+          <div class="meal-grid">
+            <article class="meal-card">
+              <figure class="meal-photo" data-emoji="🍳">
+                <img
+                  src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=900&q=70&fm=jpg&fit=crop"
+                  alt="Tartine de pain complet avec avocat et œuf poché"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                />
+              </figure>
+              <div class="meal-body">
+                <h3>Tartines avocat et œufs</h3>
+                <ul class="meal-ingredients">
+                  <li>2 œufs (brouillés, pochés ou au plat)</li>
+                  <li>2 tranches de pain complet (≈ 60 g)</li>
+                  <li>½ avocat écrasé</li>
+                  <li>1 kiwi ou une poignée de fruits rouges</li>
+                </ul>
+                <p class="meal-kcal">≈ 460 kcal</p>
+                <div class="macro-row" role="list" aria-label="Apports nutritionnels">
+                  <div class="macro" role="listitem" style="--p: 75; --c: #f28f8f">
+                    <span class="ring"><b>22 g</b></span>
+                    <span class="macro-label">Protéines</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 60; --c: #38a38d">
+                    <span class="ring"><b>38 g</b></span>
+                    <span class="macro-label">Glucides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 80; --c: #ecc94b">
+                    <span class="ring"><b>20 g</b></span>
+                    <span class="macro-label">Lipides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 70; --c: #b28e63">
+                    <span class="ring"><b>9 g</b></span>
+                    <span class="macro-label">Fibres</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="meal-card">
-            <figure class="meal-photo" data-emoji="🥣">
-              <img
-                src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=900&q=70&fm=jpg&fit=crop"
-                alt="Bol de yaourt avec fruits rouges frais"
-                loading="lazy"
-                onerror="this.style.display='none'"
-              />
-            </figure>
-            <div class="meal-body">
-              <h3>Bowl yaourt grec, avoine et fruits rouges</h3>
-              <ul class="meal-ingredients">
-                <li>150 g de yaourt grec ou skyr</li>
-                <li>40 g de flocons d’avoine</li>
-                <li>100 g de fruits rouges (frais ou surgelés)</li>
-                <li>15 g d’amandes ou 1 cuillère de beurre de cacahuète</li>
-              </ul>
-              <p class="meal-kcal">≈ 390 kcal</p>
-              <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 70; --c: #f28f8f">
-                  <span class="ring"><b>21 g</b></span>
-                  <span class="macro-label">Protéines</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 65; --c: #38a38d">
-                  <span class="ring"><b>42 g</b></span>
-                  <span class="macro-label">Glucides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 55; --c: #ecc94b">
-                  <span class="ring"><b>13 g</b></span>
-                  <span class="macro-label">Lipides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 60; --c: #b28e63">
-                  <span class="ring"><b>8 g</b></span>
-                  <span class="macro-label">Fibres</span>
+            <article class="meal-card">
+              <figure class="meal-photo" data-emoji="🥣">
+                <img
+                  src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=900&q=70&fm=jpg&fit=crop"
+                  alt="Bol de yaourt avec fruits rouges frais"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                />
+              </figure>
+              <div class="meal-body">
+                <h3>Bowl yaourt grec, avoine et fruits rouges</h3>
+                <ul class="meal-ingredients">
+                  <li>150 g de yaourt grec ou skyr</li>
+                  <li>40 g de flocons d'avoine</li>
+                  <li>100 g de fruits rouges (frais ou surgelés)</li>
+                  <li>15 g d'amandes ou 1 cuillère de beurre de cacahuète</li>
+                </ul>
+                <p class="meal-kcal">≈ 390 kcal</p>
+                <div class="macro-row" role="list" aria-label="Apports nutritionnels">
+                  <div class="macro" role="listitem" style="--p: 70; --c: #f28f8f">
+                    <span class="ring"><b>21 g</b></span>
+                    <span class="macro-label">Protéines</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 65; --c: #38a38d">
+                    <span class="ring"><b>42 g</b></span>
+                    <span class="macro-label">Glucides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 55; --c: #ecc94b">
+                    <span class="ring"><b>13 g</b></span>
+                    <span class="macro-label">Lipides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 60; --c: #b28e63">
+                    <span class="ring"><b>8 g</b></span>
+                    <span class="macro-label">Fibres</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
+        </section>
+
+        <section class="meal-block" aria-labelledby="midi-title">
+          <div class="meal-block-head">
+            <span class="meal-time">12h – 14h</span>
+            <h2 id="midi-title">Le midi</h2>
+            <p>
+              Objectif : le repas le plus complet de la journée. Une vraie portion de protéines,
+              des féculents adaptés à ton activité de l'après-midi et une bonne dose de légumes.
+            </p>
+          </div>
+          <div class="meal-grid">
+            <article class="meal-card">
+              <figure class="meal-photo" data-emoji="🥗">
+                <img
+                  src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=900&q=70&fm=jpg&fit=crop"
+                  alt="Bowl coloré de légumes, céréales et protéines"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                />
+              </figure>
+              <div class="meal-body">
+                <h3>Bowl poulet, quinoa et légumes rôtis</h3>
+                <ul class="meal-ingredients">
+                  <li>130 g de blanc de poulet grillé</li>
+                  <li>150 g de quinoa ou riz complet cuit</li>
+                  <li>Légumes rôtis à volonté (courgette, poivron, brocoli)</li>
+                  <li>1 cuillère à soupe d'huile d'olive + citron</li>
+                </ul>
+                <p class="meal-kcal">≈ 520 kcal</p>
+                <div class="macro-row" role="list" aria-label="Apports nutritionnels">
+                  <div class="macro" role="listitem" style="--p: 95; --c: #f28f8f">
+                    <span class="ring"><b>38 g</b></span>
+                    <span class="macro-label">Protéines</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 70; --c: #38a38d">
+                    <span class="ring"><b>46 g</b></span>
+                    <span class="macro-label">Glucides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 70; --c: #ecc94b">
+                    <span class="ring"><b>17 g</b></span>
+                    <span class="macro-label">Lipides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 80; --c: #b28e63">
+                    <span class="ring"><b>10 g</b></span>
+                    <span class="macro-label">Fibres</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="meal-card">
+              <figure class="meal-photo" data-emoji="🐟">
+                <img
+                  src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=900&q=70&fm=jpg&fit=crop"
+                  alt="Pavé de saumon accompagné de légumes verts"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                />
+              </figure>
+              <div class="meal-body">
+                <h3>Saumon, patate douce et brocoli</h3>
+                <ul class="meal-ingredients">
+                  <li>130 g de pavé de saumon (four ou poêle)</li>
+                  <li>200 g de patate douce rôtie</li>
+                  <li>150 g de brocoli vapeur</li>
+                  <li>Citron, herbes, 1 filet d'huile d'olive</li>
+                </ul>
+                <p class="meal-kcal">≈ 490 kcal</p>
+                <div class="macro-row" role="list" aria-label="Apports nutritionnels">
+                  <div class="macro" role="listitem" style="--p: 85; --c: #f28f8f">
+                    <span class="ring"><b>33 g</b></span>
+                    <span class="macro-label">Protéines</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 62; --c: #38a38d">
+                    <span class="ring"><b>40 g</b></span>
+                    <span class="macro-label">Glucides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 78; --c: #ecc94b">
+                    <span class="ring"><b>20 g</b></span>
+                    <span class="macro-label">Lipides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 72; --c: #b28e63">
+                    <span class="ring"><b>9 g</b></span>
+                    <span class="macro-label">Fibres</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <section
+        class="parallax-section"
+        aria-labelledby="parallax-repas-title"
+        data-bg="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=1800&q=70"
+      >
+        <div class="parallax-content">
+          <p class="eyebrow">Le bon réflexe</p>
+          <h2 id="parallax-repas-title">Quatre cercles remplis, pas un régime strict</h2>
+          <p>
+            Un repas complet coche naturellement les protéines, les glucides, les lipides et les
+            fibres. Pas besoin de calculer au gramme près, juste de varier les sources.
+          </p>
         </div>
       </section>
 
-      <section class="meal-block" aria-labelledby="midi-title">
-        <div class="meal-block-head">
-          <span class="meal-time">12h – 14h</span>
-          <h2 id="midi-title">Le midi</h2>
-          <p>
-            Objectif : le repas le plus complet de la journée. Une vraie portion de protéines,
-            des féculents adaptés à ton activité de l’après-midi et une bonne dose de légumes.
-          </p>
-        </div>
-        <div class="meal-grid">
-          <article class="meal-card">
-            <figure class="meal-photo" data-emoji="🥗">
-              <img
-                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=900&q=70&fm=jpg&fit=crop"
-                alt="Bowl coloré de légumes, céréales et protéines"
-                loading="lazy"
-                onerror="this.style.display='none'"
-              />
-            </figure>
-            <div class="meal-body">
-              <h3>Bowl poulet, quinoa et légumes rôtis</h3>
-              <ul class="meal-ingredients">
-                <li>130 g de blanc de poulet grillé</li>
-                <li>150 g de quinoa ou riz complet cuit</li>
-                <li>Légumes rôtis à volonté (courgette, poivron, brocoli)</li>
-                <li>1 cuillère à soupe d’huile d’olive + citron</li>
-              </ul>
-              <p class="meal-kcal">≈ 520 kcal</p>
-              <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 95; --c: #f28f8f">
-                  <span class="ring"><b>38 g</b></span>
-                  <span class="macro-label">Protéines</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 70; --c: #38a38d">
-                  <span class="ring"><b>46 g</b></span>
-                  <span class="macro-label">Glucides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 70; --c: #ecc94b">
-                  <span class="ring"><b>17 g</b></span>
-                  <span class="macro-label">Lipides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 80; --c: #b28e63">
-                  <span class="ring"><b>10 g</b></span>
-                  <span class="macro-label">Fibres</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="meal-card">
-            <figure class="meal-photo" data-emoji="🐟">
-              <img
-                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=900&q=70&fm=jpg&fit=crop"
-                alt="Pavé de saumon accompagné de légumes verts"
-                loading="lazy"
-                onerror="this.style.display='none'"
-              />
-            </figure>
-            <div class="meal-body">
-              <h3>Saumon, patate douce et brocoli</h3>
-              <ul class="meal-ingredients">
-                <li>130 g de pavé de saumon (four ou poêle)</li>
-                <li>200 g de patate douce rôtie</li>
-                <li>150 g de brocoli vapeur</li>
-                <li>Citron, herbes, 1 filet d’huile d’olive</li>
-              </ul>
-              <p class="meal-kcal">≈ 490 kcal</p>
-              <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 85; --c: #f28f8f">
-                  <span class="ring"><b>33 g</b></span>
-                  <span class="macro-label">Protéines</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 62; --c: #38a38d">
-                  <span class="ring"><b>40 g</b></span>
-                  <span class="macro-label">Glucides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 78; --c: #ecc94b">
-                  <span class="ring"><b>20 g</b></span>
-                  <span class="macro-label">Lipides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 72; --c: #b28e63">
-                  <span class="ring"><b>9 g</b></span>
-                  <span class="macro-label">Fibres</span>
+      <div class="page-shell">
+        <section class="meal-block" aria-labelledby="quatreheures-title">
+          <div class="meal-block-head">
+            <span class="meal-time">16h – 17h</span>
+            <h2 id="quatreheures-title">Le 4h</h2>
+            <p>
+              Objectif : une collation utile, pas un grignotage. Elle cale jusqu'au dîner, complète
+              les cercles encore vides (souvent fibres et lipides) et reste légère en calories.
+            </p>
+          </div>
+          <div class="meal-grid">
+            <article class="meal-card">
+              <figure class="meal-photo" data-emoji="🫐">
+                <img
+                  src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=900&q=70&fm=jpg&fit=crop"
+                  alt="Fruits rouges et fruits frais assortis"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                />
+              </figure>
+              <div class="meal-body">
+                <h3>Fromage blanc, fruits rouges et miel</h3>
+                <ul class="meal-ingredients">
+                  <li>150 g de fromage blanc ou skyr</li>
+                  <li>80 g de fruits rouges</li>
+                  <li>1 cuillère à café de miel</li>
+                  <li>Option : 1 cuillère de graines de chia</li>
+                </ul>
+                <p class="meal-kcal">≈ 160 kcal</p>
+                <div class="macro-row" role="list" aria-label="Apports nutritionnels">
+                  <div class="macro" role="listitem" style="--p: 45; --c: #f28f8f">
+                    <span class="ring"><b>13 g</b></span>
+                    <span class="macro-label">Protéines</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 30; --c: #38a38d">
+                    <span class="ring"><b>18 g</b></span>
+                    <span class="macro-label">Glucides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 15; --c: #ecc94b">
+                    <span class="ring"><b>3 g</b></span>
+                    <span class="macro-label">Lipides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 35; --c: #b28e63">
+                    <span class="ring"><b>4 g</b></span>
+                    <span class="macro-label">Fibres</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-        </div>
-      </section>
+            </article>
 
-      <section class="meal-block" aria-labelledby="quatreheures-title">
-        <div class="meal-block-head">
-          <span class="meal-time">16h – 17h</span>
-          <h2 id="quatreheures-title">Le 4h</h2>
-          <p>
-            Objectif : une collation utile, pas un grignotage. Elle cale jusqu’au dîner, complète
-            les cercles encore vides (souvent fibres et lipides) et reste légère en calories.
-          </p>
-        </div>
-        <div class="meal-grid">
-          <article class="meal-card">
-            <figure class="meal-photo" data-emoji="🫐">
-              <img
-                src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=900&q=70&fm=jpg&fit=crop"
-                alt="Fruits rouges et fruits frais assortis"
-                loading="lazy"
-                onerror="this.style.display='none'"
-              />
-            </figure>
-            <div class="meal-body">
-              <h3>Fromage blanc, fruits rouges et miel</h3>
-              <ul class="meal-ingredients">
+            <article class="meal-card">
+              <figure class="meal-photo" data-emoji="🍌">
+                <img
+                  src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?w=900&q=70&fm=jpg&fit=crop"
+                  alt="Bananes fraîches"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                />
+              </figure>
+              <div class="meal-body">
+                <h3>Banane, amandes et chocolat noir</h3>
+                <ul class="meal-ingredients">
+                  <li>1 banane</li>
+                  <li>15 g d'amandes ou de noix (une petite poignée)</li>
+                  <li>1 à 2 carrés de chocolat noir 70 %</li>
+                </ul>
+                <p class="meal-kcal">≈ 240 kcal</p>
+                <div class="macro-row" role="list" aria-label="Apports nutritionnels">
+                  <div class="macro" role="listitem" style="--p: 20; --c: #f28f8f">
+                    <span class="ring"><b>5 g</b></span>
+                    <span class="macro-label">Protéines</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 42; --c: #38a38d">
+                    <span class="ring"><b>28 g</b></span>
+                    <span class="macro-label">Glucides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 48; --c: #ecc94b">
+                    <span class="ring"><b>12 g</b></span>
+                    <span class="macro-label">Lipides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 40; --c: #b28e63">
+                    <span class="ring"><b>5 g</b></span>
+                    <span class="macro-label">Fibres</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="meal-block" aria-labelledby="soir-title">
+          <div class="meal-block-head">
+            <span class="meal-time">19h – 21h</span>
+            <h2 id="soir-title">Le soir</h2>
+            <p>
+              Objectif : un dîner plus léger que le midi mais toujours complet. Des protéines
+              digestes, beaucoup de légumes, une portion modérée de féculents pour bien dormir
+              sans lourdeur.
+            </p>
+          </div>
+          <div class="meal-grid">
+            <article class="meal-card">
+              <figure class="meal-photo" data-emoji="🍽️">
+                <img
+                  src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=70&fm=jpg&fit=crop"
+                  alt="Assiette de poisson et légumes servie à table"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                />
+              </figure>
+              <div class="meal-body">
+                <h3>Poisson blanc, riz complet et légumes rôtis</h3>
+                <ul class="meal-ingredients">
+                  <li>140 g de cabillaud, colin ou dorade</li>
+                  <li>120 g de riz complet cuit</li>
+                  <li>Légumes rôtis ou vapeur à volonté</li>
+                  <li>Herbes, citron, 1 filet d'huile d'olive</li>
+                </ul>
+                <p class="meal-kcal">≈ 400 kcal</p>
+                <div class="macro-row" role="list" aria-label="Apports nutritionnels">
+                  <div class="macro" role="listitem" style="--p: 82; --c: #f28f8f">
+                    <span class="ring"><b>32 g</b></span>
+                    <span class="macro-label">Protéines</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 55; --c: #38a38d">
+                    <span class="ring"><b>35 g</b></span>
+                    <span class="macro-label">Glucides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 42; --c: #ecc94b">
+                    <span class="ring"><b>10 g</b></span>
+                    <span class="macro-label">Lipides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 65; --c: #b28e63">
+                    <span class="ring"><b>8 g</b></span>
+                    <span class="macro-label">Fibres</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="meal-card">
+              <figure class="meal-photo" data-emoji="🥙">
+                <img
+                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900&q=70&fm=jpg&fit=crop"
+                  alt="Bowl végétarien de légumes frais et légumineuses"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                />
+              </figure>
+              <div class="meal-body">
+                <h3>Bowl lentilles, œuf mollet et épinards</h3>
+                <ul class="meal-ingredients">
+                  <li>150 g de lentilles cuites</li>
+                  <li>1 œuf mollet + 30 g de feta émiettée</li>
+                  <li>Épinards frais ou poêlés, tomates cerises</li>
+                  <li>1 cuillère à soupe d'huile d'olive, vinaigre balsamique</li>
+                </ul>
+                <p class="meal-kcal">≈ 430 kcal</p>
+                <div class="macro-row" role="list" aria-label="Apports nutritionnels">
+                  <div class="macro" role="listitem" style="--p: 65; --c: #f28f8f">
+                    <span class="ring"><b>25 g</b></span>
+                    <span class="macro-label">Protéines</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 58; --c: #38a38d">
+                    <span class="ring"><b>38 g</b></span>
+                    <span class="macro-label">Glucides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 64; --c: #ecc94b">
+                    <span class="ring"><b>16 g</b></span>
+                    <span class="macro-label">Lipides</span>
+                  </div>
+                  <div class="macro" role="listitem" style="--p: 95; --c: #b28e63">
+                    <span class="ring"><b>12 g</b></span>
+                    <span class="macro-label">Fibres</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-card missing-macros" aria-labelledby="missing-title">
+          <div class="missing-intro">
+            <p class="eyebrow">Astuce cercles</p>
+            <h2 id="missing-title">Il te manque un cercle en fin de journée ?</h2>
+            <p>
+              Regarde quel cercle est encore vide dans Foodvisor et ajoute simplement l'un de ces
+              aliments « joker » à ton prochain repas ou à ta collation.
+            </p>
+          </div>
+          <div class="missing-grid">
+            <article style="--c: #f28f8f">
+              <h3>Protéines</h3>
+              <ul>
+                <li>2 œufs ou 1 œuf dur en encas</li>
                 <li>150 g de fromage blanc ou skyr</li>
-                <li>80 g de fruits rouges</li>
-                <li>1 cuillère à café de miel</li>
-                <li>Option : 1 cuillère de graines de chia</li>
+                <li>1 boîte de thon ou 100 g de poulet</li>
               </ul>
-              <p class="meal-kcal">≈ 160 kcal</p>
-              <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 45; --c: #f28f8f">
-                  <span class="ring"><b>13 g</b></span>
-                  <span class="macro-label">Protéines</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 30; --c: #38a38d">
-                  <span class="ring"><b>18 g</b></span>
-                  <span class="macro-label">Glucides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 15; --c: #ecc94b">
-                  <span class="ring"><b>3 g</b></span>
-                  <span class="macro-label">Lipides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 35; --c: #b28e63">
-                  <span class="ring"><b>4 g</b></span>
-                  <span class="macro-label">Fibres</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="meal-card">
-            <figure class="meal-photo" data-emoji="🍌">
-              <img
-                src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?w=900&q=70&fm=jpg&fit=crop"
-                alt="Bananes fraîches"
-                loading="lazy"
-                onerror="this.style.display='none'"
-              />
-            </figure>
-            <div class="meal-body">
-              <h3>Banane, amandes et chocolat noir</h3>
-              <ul class="meal-ingredients">
-                <li>1 banane</li>
-                <li>15 g d’amandes ou de noix (une petite poignée)</li>
-                <li>1 à 2 carrés de chocolat noir 70 %</li>
+            </article>
+            <article style="--c: #38a38d">
+              <h3>Glucides</h3>
+              <ul>
+                <li>1 fruit (banane, pomme, poire)</li>
+                <li>1 tranche de pain complet</li>
+                <li>Une portion de riz ou patate douce en plus</li>
               </ul>
-              <p class="meal-kcal">≈ 240 kcal</p>
-              <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 20; --c: #f28f8f">
-                  <span class="ring"><b>5 g</b></span>
-                  <span class="macro-label">Protéines</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 42; --c: #38a38d">
-                  <span class="ring"><b>28 g</b></span>
-                  <span class="macro-label">Glucides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 48; --c: #ecc94b">
-                  <span class="ring"><b>12 g</b></span>
-                  <span class="macro-label">Lipides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 40; --c: #b28e63">
-                  <span class="ring"><b>5 g</b></span>
-                  <span class="macro-label">Fibres</span>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="meal-block" aria-labelledby="soir-title">
-        <div class="meal-block-head">
-          <span class="meal-time">19h – 21h</span>
-          <h2 id="soir-title">Le soir</h2>
-          <p>
-            Objectif : un dîner plus léger que le midi mais toujours complet. Des protéines
-            digestes, beaucoup de légumes, une portion modérée de féculents pour bien dormir
-            sans lourdeur.
+            </article>
+            <article style="--c: #ecc94b">
+              <h3>Lipides</h3>
+              <ul>
+                <li>½ avocat</li>
+                <li>Une poignée d'amandes ou de noix</li>
+                <li>1 cuillère d'huile d'olive ou de colza</li>
+              </ul>
+            </article>
+            <article style="--c: #b28e63">
+              <h3>Fibres</h3>
+              <ul>
+                <li>Des légumes en plus (crus ou cuits)</li>
+                <li>Lentilles, pois chiches, haricots rouges</li>
+                <li>Fruits rouges, kiwi, graines de chia</li>
+              </ul>
+            </article>
+          </div>
+          <p class="photo-credit">
+            Valeurs nutritionnelles approximatives, à ajuster avec Foodvisor selon tes portions.
+            Photos : Unsplash (libres de droit).
           </p>
-        </div>
-        <div class="meal-grid">
-          <article class="meal-card">
-            <figure class="meal-photo" data-emoji="🍽️">
-              <img
-                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=70&fm=jpg&fit=crop"
-                alt="Assiette de poisson et légumes servie à table"
-                loading="lazy"
-                onerror="this.style.display='none'"
-              />
-            </figure>
-            <div class="meal-body">
-              <h3>Poisson blanc, riz complet et légumes rôtis</h3>
-              <ul class="meal-ingredients">
-                <li>140 g de cabillaud, colin ou dorade</li>
-                <li>120 g de riz complet cuit</li>
-                <li>Légumes rôtis ou vapeur à volonté</li>
-                <li>Herbes, citron, 1 filet d’huile d’olive</li>
-              </ul>
-              <p class="meal-kcal">≈ 400 kcal</p>
-              <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 82; --c: #f28f8f">
-                  <span class="ring"><b>32 g</b></span>
-                  <span class="macro-label">Protéines</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 55; --c: #38a38d">
-                  <span class="ring"><b>35 g</b></span>
-                  <span class="macro-label">Glucides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 42; --c: #ecc94b">
-                  <span class="ring"><b>10 g</b></span>
-                  <span class="macro-label">Lipides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 65; --c: #b28e63">
-                  <span class="ring"><b>8 g</b></span>
-                  <span class="macro-label">Fibres</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="meal-card">
-            <figure class="meal-photo" data-emoji="🥙">
-              <img
-                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900&q=70&fm=jpg&fit=crop"
-                alt="Bowl végétarien de légumes frais et légumineuses"
-                loading="lazy"
-                onerror="this.style.display='none'"
-              />
-            </figure>
-            <div class="meal-body">
-              <h3>Bowl lentilles, œuf mollet et épinards</h3>
-              <ul class="meal-ingredients">
-                <li>150 g de lentilles cuites</li>
-                <li>1 œuf mollet + 30 g de feta émiettée</li>
-                <li>Épinards frais ou poêlés, tomates cerises</li>
-                <li>1 cuillère à soupe d’huile d’olive, vinaigre balsamique</li>
-              </ul>
-              <p class="meal-kcal">≈ 430 kcal</p>
-              <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 65; --c: #f28f8f">
-                  <span class="ring"><b>25 g</b></span>
-                  <span class="macro-label">Protéines</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 58; --c: #38a38d">
-                  <span class="ring"><b>38 g</b></span>
-                  <span class="macro-label">Glucides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 64; --c: #ecc94b">
-                  <span class="ring"><b>16 g</b></span>
-                  <span class="macro-label">Lipides</span>
-                </div>
-                <div class="macro" role="listitem" style="--p: 95; --c: #b28e63">
-                  <span class="ring"><b>12 g</b></span>
-                  <span class="macro-label">Fibres</span>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-card missing-macros" aria-labelledby="missing-title">
-        <div class="missing-intro">
-          <p class="eyebrow">Astuce cercles</p>
-          <h2 id="missing-title">Il te manque un cercle en fin de journée ?</h2>
-          <p>
-            Regarde quel cercle est encore vide dans Foodvisor et ajoute simplement l’un de ces
-            aliments « joker » à ton prochain repas ou à ta collation.
-          </p>
-        </div>
-        <div class="missing-grid">
-          <article style="--c: #f28f8f">
-            <h3>Protéines</h3>
-            <ul>
-              <li>2 œufs ou 1 œuf dur en encas</li>
-              <li>150 g de fromage blanc ou skyr</li>
-              <li>1 boîte de thon ou 100 g de poulet</li>
-            </ul>
-          </article>
-          <article style="--c: #38a38d">
-            <h3>Glucides</h3>
-            <ul>
-              <li>1 fruit (banane, pomme, poire)</li>
-              <li>1 tranche de pain complet</li>
-              <li>Une portion de riz ou patate douce en plus</li>
-            </ul>
-          </article>
-          <article style="--c: #ecc94b">
-            <h3>Lipides</h3>
-            <ul>
-              <li>½ avocat</li>
-              <li>Une poignée d’amandes ou de noix</li>
-              <li>1 cuillère d’huile d’olive ou de colza</li>
-            </ul>
-          </article>
-          <article style="--c: #b28e63">
-            <h3>Fibres</h3>
-            <ul>
-              <li>Des légumes en plus (crus ou cuits)</li>
-              <li>Lentilles, pois chiches, haricots rouges</li>
-              <li>Fruits rouges, kiwi, graines de chia</li>
-            </ul>
-          </article>
-        </div>
-        <p class="photo-credit">
-          Valeurs nutritionnelles approximatives, à ajuster avec Foodvisor selon tes portions.
-          Photos : Unsplash (libres de droit).
-        </p>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <p>
-        Site d'accompagnement personnel — en savoir plus sur
-        <a href="https://www.foodvisor.io/fr/" target="_blank" rel="noopener">foodvisor.io</a>
-      </p>
+      <div class="site-footer-inner">
+        <a class="footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 36 36">
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#38a38d" stroke-width="7" stroke-dasharray="35 88" transform="rotate(-90 18 18)" />
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#f28f8f" stroke-width="7" stroke-dasharray="27 88" stroke-dashoffset="-35" transform="rotate(-90 18 18)" />
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#ecc94b" stroke-width="7" stroke-dasharray="26 88" stroke-dashoffset="-62" transform="rotate(-90 18 18)" />
+            </svg>
+          </span>
+          Foodvisor
+        </a>
+        <nav class="footer-links" aria-label="Liens du pied de page">
+          <a href="index.html">Accueil</a>
+          <a href="plats-du-quotidien.html">Plats du quotidien</a>
+          <a href="exemples-repas.html">Repas équilibrés</a>
+          <a href="https://www.foodvisor.io/fr/" target="_blank" rel="noopener">foodvisor.io</a>
+        </nav>
+      </div>
+      <p class="footer-copy">Site d'accompagnement personnel, non affilié à Foodvisor SAS.</p>
     </footer>
 
     <script src="script.js"></script>

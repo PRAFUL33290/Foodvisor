@@ -44,7 +44,7 @@ body {
 .page-shell {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 40px 0 64px;
+  padding: 56px 0;
 }
 
 h1,
@@ -75,6 +75,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 40;
+  width: 100%;
   border-bottom: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
@@ -258,35 +259,170 @@ p {
   font-size: 1.08rem;
 }
 
-/* ---------- Hero ---------- */
+/* ---------- Hero plein écran ---------- */
 
-.hero {
+.hero-screen {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--accent-dark) 100%);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+.hero-screen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(17, 31, 43, 0.4) 0%, rgba(17, 31, 43, 0.78) 100%);
+}
+
+.hero-screen-inner {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
   gap: 40px;
   align-items: center;
-  padding: 48px;
-  border: 1px solid var(--line);
-  border-radius: 32px;
-  background: linear-gradient(135deg, #ffffff 0%, #e9f4f1 100%);
-  box-shadow: var(--shadow);
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 128px 0 96px;
 }
 
-.hero h1 {
+.hero-screen .eyebrow {
+  color: #a9e6d4;
+}
+
+.hero-screen h1 {
   margin-bottom: 16px;
+  color: #ffffff;
   font-size: clamp(1.9rem, 4.6vw, 3.1rem);
 }
 
-.hero .intro {
+.hero-screen .intro {
   margin-bottom: 24px;
-  color: var(--muted);
+  color: #e4eef4;
   font-size: 1.12rem;
+}
+
+.hero-screen .intro strong {
+  color: #ffffff;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.scroll-cue {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.85;
+  transform: translateX(-50%);
+}
+
+.scroll-cue .arrow {
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transform: rotate(45deg);
+  animation: scroll-bounce 1.8s infinite;
+}
+
+@keyframes scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(45deg);
+  }
+}
+
+/* ---------- Sections parallax plein écran ---------- */
+
+.parallax-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 62vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--accent-dark) 0%, var(--navy) 100%);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  text-align: center;
+}
+
+.parallax-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(17, 31, 43, 0.42) 0%, rgba(17, 31, 43, 0.75) 100%);
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  width: min(700px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 72px 20px;
+}
+
+.parallax-content .eyebrow {
+  color: #a9e6d4;
+}
+
+.parallax-content h2 {
+  margin-bottom: 14px;
+  color: #ffffff;
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+}
+
+.parallax-content p {
+  margin: 0 0 24px;
+  color: #e4eef4;
+  font-size: 1.08rem;
+}
+
+.parallax-content .btn-primary {
+  background: #ffffff;
+  color: var(--navy);
+  box-shadow: none;
+}
+
+@media (max-width: 620px) {
+  .hero-screen-inner {
+    padding: 108px 0 72px;
+  }
+
+  .parallax-content {
+    padding: 56px 16px;
+  }
 }
 
 .btn {
@@ -544,30 +680,6 @@ p {
   background: #fdf7e3;
   color: #6b5a1e;
   font-weight: 600;
-}
-
-.avis {
-  background: linear-gradient(135deg, var(--navy) 0%, #2f5a55 100%);
-  color: #e8f2ee;
-}
-
-.avis h2,
-.avis .eyebrow {
-  color: #ffffff;
-}
-
-.avis .eyebrow {
-  color: #9fd8c9;
-}
-
-.avis p {
-  color: #d5e6e0;
-}
-
-.avis .btn-primary {
-  background: #ffffff;
-  color: var(--navy);
-  box-shadow: none;
 }
 
 /* ---------- Pages repas (communs) ---------- */
@@ -933,24 +1045,82 @@ p {
   font-size: 0.85rem;
 }
 
-/* ---------- Pied de page ---------- */
+/* ---------- Pied de page plein écran, minimaliste ---------- */
 
 .site-footer {
-  padding: 28px 0 40px;
-  color: var(--muted);
+  width: 100%;
+  padding: 32px 0 24px;
+  background: var(--navy);
+  color: #9fb4c4;
+}
+
+.site-footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-brand .brand-mark {
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.footer-links a {
+  color: #c3d4e0;
   font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-copy {
+  margin: 18px 0 0;
+  width: min(1120px, calc(100% - 32px));
+  margin-left: auto;
+  margin-right: auto;
+  color: #728696;
+  font-size: 0.78rem;
   text-align: center;
 }
 
-.site-footer a {
-  color: var(--accent-dark);
-  font-weight: 700;
+@media (max-width: 620px) {
+  .site-footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
 }
 
 /* ---------- Responsive ---------- */
 
 @media (max-width: 900px) {
-  .hero,
+  .hero-screen-inner,
   .split,
   .plan-grid,
   .meal-grid,
@@ -967,12 +1137,7 @@ p {
 
 @media (max-width: 620px) {
   .page-shell {
-    padding: 20px 0 48px;
-  }
-
-  .hero {
-    padding: 28px;
-    border-radius: 26px;
+    padding: 32px 0;
   }
 
   .section-card,
