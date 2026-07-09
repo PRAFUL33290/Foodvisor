@@ -22,3 +22,14 @@ if (header && toggle) {
     }
   });
 }
+
+document.querySelectorAll("[data-bg]").forEach((el) => {
+  const src = el.getAttribute("data-bg");
+  if (!src) return;
+  const preload = new Image();
+  preload.onload = () => {
+    el.style.backgroundImage = `url("${src}")`;
+    el.classList.add("bg-loaded");
+  };
+  preload.src = src;
+});
