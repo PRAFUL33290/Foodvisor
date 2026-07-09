@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Idées de repas - Foodvisor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-nav">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 36 36">
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#38a38d" stroke-width="7" stroke-dasharray="35 88" transform="rotate(-90 18 18)" />
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#f28f8f" stroke-width="7" stroke-dasharray="27 88" stroke-dashoffset="-35" transform="rotate(-90 18 18)" />
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#ecc94b" stroke-width="7" stroke-dasharray="26 88" stroke-dashoffset="-62" transform="rotate(-90 18 18)" />
+            </svg>
+          </span>
+          Foodvisor <small>assistant</small>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="nav-menu" class="nav-menu" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="plats-du-quotidien.html">Plats du quotidien</a>
+          <a href="idees-repas.html" aria-current="page">Idées de repas</a>
+          <a href="exemples-repas.html">Repas équilibrés</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Panne d'inspiration ?</p>
+          <h1 id="page-title">Des idées de repas pour matin, midi et soir</h1>
+          <p class="intro">
+            Pas de recette compliquée ni de courses à rallonge : juste une liste d'idées
+            simples à piocher selon l'heure et l'envie. Pour le détail des apports
+            nutritionnels de chaque repas, direction la page « Repas équilibrés ».
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="exemples-repas.html">Voir les repas équilibrés</a>
+            <a class="btn btn-secondary" href="plats-du-quotidien.html">Plats du quotidien</a>
+          </div>
+        </div>
+        <aside class="goals-card" aria-label="Comment utiliser cette page">
+          <span>Le principe</span>
+          <strong>3 moments, des idées à piocher</strong>
+          <span>Objectif</span>
+          <strong>Trouver vite, sans se prendre la tête</strong>
+        </aside>
+      </section>
+
+      <section class="meal-block" aria-labelledby="matin-title">
+        <div class="meal-block-head">
+          <span class="meal-time meal-time-matin">🌅 Le matin</span>
+          <h2 id="matin-title">Idées pour le petit-déjeuner</h2>
+          <p>De quoi démarrer la journée sans réfléchir, que tu aies 2 minutes ou un peu plus de temps.</p>
+        </div>
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🥣</span>
+              <div>
+                <h3>Porridge express</h3>
+                <span class="idea-tag">5 min · à préparer la veille</span>
+              </div>
+            </div>
+            <p>Flocons d'avoine, lait (ou lait végétal), banane écrasée, une pincée de cannelle.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🥪</span>
+              <div>
+                <h3>Tartine œuf-avocat</h3>
+                <span class="idea-tag">10 min</span>
+              </div>
+            </div>
+            <p>Pain complet, demi-avocat écrasé, œuf au plat ou poché.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🥤</span>
+              <div>
+                <h3>Smoothie protéiné</h3>
+                <span class="idea-tag">3 min · à emporter</span>
+              </div>
+            </div>
+            <p>Lait, banane, flocons d'avoine, une cuillère de beurre de cacahuète, à mixer.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🧀</span>
+              <div>
+                <h3>Pain, fromage, fruit</h3>
+                <span class="idea-tag">2 min · le classique</span>
+              </div>
+            </div>
+            <p>La version simple qui fonctionne toujours quand le temps manque.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🥞</span>
+              <div>
+                <h3>Pancakes minute</h3>
+                <span class="idea-tag">10 min</span>
+              </div>
+            </div>
+            <p>Flocons d'avoine, œuf et banane mixés, cuits à la poêle sans ajout de sucre.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🍓</span>
+              <div>
+                <h3>Yaourt grec &amp; granola</h3>
+                <span class="idea-tag">3 min</span>
+              </div>
+            </div>
+            <p>Yaourt grec ou skyr, fruits rouges, granola maison et un trait de miel.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="meal-block" aria-labelledby="midi-title">
+        <div class="meal-block-head">
+          <span class="meal-time meal-time-midi">☀️ Le midi</span>
+          <h2 id="midi-title">Idées pour le déjeuner</h2>
+          <p>Le repas le plus complet de la journée, à préparer chez soi ou à emporter au bureau.</p>
+        </div>
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🍱</span>
+              <div>
+                <h3>Bowl riz, poulet, légumes</h3>
+                <span class="idea-tag">à décliner selon le placard</span>
+              </div>
+            </div>
+            <p>Une base simple : féculent, protéine, légumes de saison, un filet d'huile d'olive.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🥙</span>
+              <div>
+                <h3>Wrap thon ou poulet</h3>
+                <span class="idea-tag">à emporter</span>
+              </div>
+            </div>
+            <p>Galette, crudités, protéine au choix, un peu de sauce yaourt.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🍲</span>
+              <div>
+                <h3>Soupe + tartine fromage</h3>
+                <span class="idea-tag">jours pressés ou froids</span>
+              </div>
+            </div>
+            <p>Une soupe maison ou du commerce, accompagnée d'une tartine de fromage.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🍝</span>
+              <div>
+                <h3>Pâtes, légumes, parmesan</h3>
+                <span class="idea-tag">anti-gaspi</span>
+              </div>
+            </div>
+            <p>Parfait pour recycler les restes de légumes de la veille.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🥗</span>
+              <div>
+                <h3>Salade complète</h3>
+                <span class="idea-tag">pas juste de la salade verte</span>
+              </div>
+            </div>
+            <p>Œuf ou thon, féculent (riz, quinoa, pâtes), légumes, vinaigrette.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🌯</span>
+              <div>
+                <h3>Restes de la veille réinventés</h3>
+                <span class="idea-tag">anti-gaspi</span>
+              </div>
+            </div>
+            <p>Riz et légumes de la veille transformés en galette poêlée ou en wrap.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="meal-block" aria-labelledby="soir-title">
+        <div class="meal-block-head">
+          <span class="meal-time meal-time-soir">🌙 Le soir</span>
+          <h2 id="soir-title">Idées pour le dîner</h2>
+          <p>Plus léger que le midi mais toujours complet, pour bien digérer avant de dormir.</p>
+        </div>
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🐟</span>
+              <div>
+                <h3>Poisson, légumes, féculent léger</h3>
+                <span class="idea-tag">classique et digeste</span>
+              </div>
+            </div>
+            <p>Poisson blanc au four, légumes vapeur, une petite portion de riz ou patate douce.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🥘</span>
+              <div>
+                <h3>Poêlée légumes, œuf ou tofu</h3>
+                <span class="idea-tag">sans viande</span>
+              </div>
+            </div>
+            <p>Légumes de saison poêlés avec un œuf mollet ou des dés de tofu.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🍜</span>
+              <div>
+                <h3>Soupe maison + protéine</h3>
+                <span class="idea-tag">réconfortant</span>
+              </div>
+            </div>
+            <p>Soupe de légumes mixée avec poulet, tofu ou un œuf pour rester rassasié.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🥗</span>
+              <div>
+                <h3>Bowl lentilles &amp; légumes rôtis</h3>
+                <span class="idea-tag">végétarien</span>
+              </div>
+            </div>
+            <p>Lentilles ou pois chiches tièdes, légumes rôtis, un filet d'huile d'olive.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🍳</span>
+              <div>
+                <h3>Omelette garnie + salade</h3>
+                <span class="idea-tag">le dépanneur du soir</span>
+              </div>
+            </div>
+            <p>Omelette aux légumes ou au fromage, accompagnée d'une salade verte.</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-card-head">
+              <span class="idea-icon" aria-hidden="true">🍚</span>
+              <div>
+                <h3>Riz sauté aux restes</h3>
+                <span class="idea-tag">anti-gaspi</span>
+              </div>
+            </div>
+            <p>Riz sauté aux légumes avec les restes de viande ou de poisson du midi.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card missing-macros" aria-labelledby="astuce-title">
+        <div class="missing-intro">
+          <p class="eyebrow">Bon à savoir</p>
+          <h2 id="astuce-title">Envie de connaître les apports nutritionnels ?</h2>
+          <p>
+            Ces idées sont pensées pour être piochées facilement au quotidien. Pour des exemples
+            de repas détaillés avec calories et macronutriments, consulte la page
+            <a href="exemples-repas.html">Repas équilibrés</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Site d'accompagnement personnel — en savoir plus sur
+        <a href="https://www.foodvisor.io/fr/" target="_blank" rel="noopener">foodvisor.io</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
