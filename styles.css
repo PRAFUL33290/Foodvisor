@@ -610,6 +610,81 @@ p {
   margin-top: 24px;
 }
 
+.meal-time-matin {
+  background: var(--matin);
+  color: #ffffff;
+}
+
+.meal-time-midi {
+  background: var(--midi);
+  color: #ffffff;
+}
+
+.meal-time-soir {
+  background: var(--soir);
+  color: #ffffff;
+}
+
+/* ---------- Page idées de repas ---------- */
+
+.idea-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.idea-card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--card);
+  box-shadow: var(--shadow-soft);
+}
+
+.idea-card-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.idea-icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: var(--soft);
+  font-size: 1.6rem;
+}
+
+.idea-card h3 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+}
+
+.idea-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.idea-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .meal-card {
   overflow: hidden;
   display: flex;
@@ -960,7 +1035,8 @@ p {
 
   .feature-grid,
   .targets-grid,
-  .missing-grid {
+  .missing-grid,
+  .idea-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -983,7 +1059,8 @@ p {
 
   .feature-grid,
   .targets-grid,
-  .missing-grid {
+  .missing-grid,
+  .idea-grid {
     grid-template-columns: 1fr;
   }
 
