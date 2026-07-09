@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plats du quotidien - Foodvisor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-nav">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 36 36">
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#38a38d" stroke-width="7" stroke-dasharray="35 88" transform="rotate(-90 18 18)" />
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#f28f8f" stroke-width="7" stroke-dasharray="27 88" stroke-dashoffset="-35" transform="rotate(-90 18 18)" />
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#ecc94b" stroke-width="7" stroke-dasharray="26 88" stroke-dashoffset="-62" transform="rotate(-90 18 18)" />
+            </svg>
+          </span>
+          Foodvisor <small>assistant</small>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="nav-menu" class="nav-menu" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="plats-du-quotidien.html" aria-current="page">Plats du quotidien</a>
+          <a href="exemples-repas.html">Repas équilibrés</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Plats de tous les jours</p>
+          <h1 id="page-title">Tes plats simples, complétés selon tes objectifs</h1>
+          <p class="intro">
+            Steak-frites, McDo, kebab, omelette, pâtes… pas besoin de cuisiner « healthy » tous
+            les jours. Pour chaque plat du quotidien, voici ce qu'il apporte, ce qu'il lui
+            manque par rapport à tes objectifs Foodvisor, et l'aliment à ajouter pour compléter
+            tes cercles.
+          </p>
+        </div>
+        <aside class="goals-card" aria-label="Mes objectifs Foodvisor">
+          <span>Objectif calorique</span>
+          <strong>2119 kcal / jour</strong>
+          <span>Par repas</span>
+          <strong>635 kcal × 3 + en-cas 211</strong>
+          <span>Macros du jour</span>
+          <strong>P 159 · G 201 · L 71 · F 21</strong>
+        </aside>
+      </section>
+
+      <section class="section-card" aria-labelledby="targets-title">
+        <p class="eyebrow">Tes repères</p>
+        <h2 id="targets-title">Tes objectifs quotidiens Foodvisor</h2>
+        <p class="lead">
+          Les jauges de chaque plat sont calculées par rapport à ton budget d'un repas principal
+          (635 kcal) et à tes objectifs de macros de la journée.
+        </p>
+        <div class="targets-grid">
+          <div class="target" style="--c: #f28f8f">
+            <span>Protéines</span>
+            <strong>159 g / jour</strong>
+          </div>
+          <div class="target" style="--c: #38a38d">
+            <span>Glucides</span>
+            <strong>201 g / jour</strong>
+          </div>
+          <div class="target" style="--c: #ecc94b">
+            <span>Lipides</span>
+            <strong>71 g / jour</strong>
+          </div>
+          <div class="target" style="--c: #b28e63">
+            <span>Fibres</span>
+            <strong>21 g / jour</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="dishes-title">
+        <p class="eyebrow">10 plats passés au crible</p>
+        <h2 id="dishes-title">Choisis ton plat, on complète le reste</h2>
+
+        <div class="dish-grid">
+          <article class="dish-card">
+            <div class="dish-head">
+              <span class="dish-icon" aria-hidden="true">🥩</span>
+              <div>
+                <h3>Steak-frites</h3>
+                <p>Steak 150 g + frites 150 g</p>
+              </div>
+            </div>
+            <div class="dish-budget gauge" style="--c: #38a38d; --p: 100">
+              <div class="gauge-top"><strong>≈ 640 kcal</strong><span>≈ 100 % d'un repas</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+            <div class="macro-chips">
+              <span style="--c: #f28f8f"><i></i>P 38 g</span>
+              <span style="--c: #38a38d"><i></i>G 48 g</span>
+              <span style="--c: #ecc94b"><i></i>L 32 g</span>
+              <span style="--c: #b28e63"><i></i>F 4 g</span>
+            </div>
+            <p class="dish-tip">
+              <strong>Complète avec</strong>
+              Il manque des fibres : remplace un tiers des frites par des haricots verts ou
+              ajoute une salade verte (+35 kcal, +4 g de fibres). Le plat rentre pile dans ton
+              budget déjeuner.
+            </p>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-head">
+              <span class="dish-icon" aria-hidden="true">🍔</span>
+              <div>
+                <h3>McDo</h3>
+                <p>Big Mac + petites frites + boisson zéro</p>
+              </div>
+            </div>
+            <div class="dish-budget gauge" style="--c: #e07a3f; --p: 100">
+              <div class="gauge-top"><strong>≈ 740 kcal</strong><span>≈ 117 % d'un repas</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+            <div class="macro-chips">
+              <span style="--c: #f28f8f"><i></i>P 29 g</span>
+              <span style="--c: #38a38d"><i></i>G 70 g</span>
+              <span style="--c: #ecc94b"><i></i>L 36 g</span>
+              <span style="--c: #b28e63"><i></i>F 5 g</span>
+            </div>
+            <p class="dish-tip warn">
+              <strong>Ajuste</strong>
+              Ça dépasse ton budget de ≈ 100 kcal : garde la boisson zéro ou de l'eau, évite les
+              sauces en plus, et prévois un dîner plus léger (soupe + fromage blanc). Utilise ton
+              en-cas pour un fruit : les fibres manquent.
+            </p>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-head">
+              <span class="dish-icon" aria-hidden="true">🍗</span>
+              <div>
+                <h3>KFC</h3>
+                <p>3 tenders + petites frites</p>
+              </div>
+            </div>
+            <div class="dish-budget gauge" style="--c: #38a38d; --p: 96">
+              <div class="gauge-top"><strong>≈ 610 kcal</strong><span>≈ 96 % d'un repas</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+            <div class="macro-chips">
+              <span style="--c: #f28f8f"><i></i>P 32 g</span>
+              <span style="--c: #38a38d"><i></i>G 50 g</span>
+              <span style="--c: #ecc94b"><i></i>L 30 g</span>
+              <span style="--c: #b28e63"><i></i>F 4 g</span>
+            </div>
+            <p class="dish-tip">
+              <strong>Complète avec</strong>
+              Prends le coleslaw plutôt qu'une deuxième frite : +2 g de fibres pour rester dans
+              le budget. Au repas suivant, mise sur les légumes, la journée sera pauvre en
+              fibres sinon.
+            </p>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-head">
+              <span class="dish-icon" aria-hidden="true">🥙</span>
+              <div>
+                <h3>Kebab</h3>
+                <p>Pain pita + viande + crudités, sauce blanche</p>
+              </div>
+            </div>
+            <div class="dish-budget gauge" style="--c: #38a38d; --p: 100">
+              <div class="gauge-top"><strong>≈ 650 kcal (sans frites)</strong><span>≈ 102 % d'un repas</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+            <div class="macro-chips">
+              <span style="--c: #f28f8f"><i></i>P 38 g</span>
+              <span style="--c: #38a38d"><i></i>G 55 g</span>
+              <span style="--c: #ecc94b"><i></i>L 30 g</span>
+              <span style="--c: #b28e63"><i></i>F 5 g</span>
+            </div>
+            <p class="dish-tip">
+              <strong>Complète avec</strong>
+              Sans les frites, il tient dans ton budget et les protéines sont excellentes.
+              Demande un maximum de crudités (salade, tomates, oignons, chou) pour les fibres,
+              et sauce blanche plutôt que samouraï ou algérienne.
+            </p>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-head">
+              <span class="dish-icon" aria-hidden="true">🥗</span>
+              <div>
+                <h3>Salade composée</h3>
+                <p>Poulet, œuf, tomates, maïs, vinaigrette</p>
+              </div>
+            </div>
+            <div class="dish-budget gauge" style="--c: #38a38d; --p: 68">
+              <div class="gauge-top"><strong>≈ 430 kcal</strong><span>≈ 68 % d'un repas</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+            <div class="macro-chips">
+              <span style="--c: #f28f8f"><i></i>P 32 g</span>
+              <span style="--c: #38a38d"><i></i>G 20 g</span>
+              <span style="--c: #ecc94b"><i></i>L 24 g</span>
+              <span style="--c: #b28e63"><i></i>F 6 g</span>
+            </div>
+            <p class="dish-tip">
+              <strong>Complète avec</strong>
+              Il te reste ≈ 200 kcal et il manque des glucides : ajoute du pain complet ou une
+              portion de riz froid dans la salade, plus un fruit en dessert. Ton cercle glucides
+              te dira merci.
+            </p>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-head">
+              <span class="dish-icon" aria-hidden="true">🍳</span>
+              <div>
+                <h3>Omelette</h3>
+                <p>3 œufs + fromage + salade verte</p>
+              </div>
+            </div>
+            <div class="dish-budget gauge" style="--c: #38a38d; --p: 66">
+              <div class="gauge-top"><strong>≈ 420 kcal</strong><span>≈ 66 % d'un repas</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+            <div class="macro-chips">
+              <span style="--c: #f28f8f"><i></i>P 27 g</span>
+              <span style="--c: #38a38d"><i></i>G 4 g</span>
+              <span style="--c: #ecc94b"><i></i>L 32 g</span>
+              <span style="--c: #b28e63"><i></i>F 2 g</span>
+            </div>
+            <p class="dish-tip">
+              <strong>Complète avec</strong>
+              Presque zéro glucide et fibres : ajoute 2 tranches de pain complet et un fruit
+              (+200 kcal). Tu obtiens un repas complet qui remplit les 4 cercles.
+            </p>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-head">
+              <span class="dish-icon" aria-hidden="true">🍝</span>
+              <div>
+                <h3>Pâtes bolognaise</h3>
+                <p>Assiette de 350 g</p>
+              </div>
+            </div>
+            <div class="dish-budget gauge" style="--c: #38a38d; --p: 88">
+              <div class="gauge-top"><strong>≈ 560 kcal</strong><span>≈ 88 % d'un repas</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+            <div class="macro-chips">
+              <span style="--c: #f28f8f"><i></i>P 26 g</span>
+              <span style="--c: #38a38d"><i></i>G 72 g</span>
+              <span style="--c: #ecc94b"><i></i>L 16 g</span>
+              <span style="--c: #b28e63"><i></i>F 6 g</span>
+            </div>
+            <p class="dish-tip">
+              <strong>Complète avec</strong>
+              Avec ton objectif de 159 g de protéines, force un peu la dose : plus de viande
+              dans la sauce ou des copeaux de parmesan (+70 kcal). Une salade verte en entrée
+              ajoute les fibres qui manquent.
+            </p>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-head">
+              <span class="dish-icon" aria-hidden="true">🍕</span>
+              <div>
+                <h3>Pizza reine</h3>
+                <p>Pizza entière classique</p>
+              </div>
+            </div>
+            <div class="dish-budget gauge" style="--c: #e07a3f; --p: 100">
+              <div class="gauge-top"><strong>≈ 820 kcal</strong><span>≈ 129 % d'un repas</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+            <div class="macro-chips">
+              <span style="--c: #f28f8f"><i></i>P 35 g</span>
+              <span style="--c: #38a38d"><i></i>G 90 g</span>
+              <span style="--c: #ecc94b"><i></i>L 32 g</span>
+              <span style="--c: #b28e63"><i></i>F 5 g</span>
+            </div>
+            <p class="dish-tip warn">
+              <strong>Ajuste</strong>
+              Entière, elle dépasse ton budget de ≈ 185 kcal. Garde 3 parts sur 4 avec une
+              salade verte, ou assume la pizza entière et allège le repas suivant. Un plaisir
+              planifié reste compatible avec ton objectif.
+            </p>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-head">
+              <span class="dish-icon" aria-hidden="true">🥖</span>
+              <div>
+                <h3>Jambon-beurre</h3>
+                <p>Sandwich baguette classique</p>
+              </div>
+            </div>
+            <div class="dish-budget gauge" style="--c: #38a38d; --p: 68">
+              <div class="gauge-top"><strong>≈ 430 kcal</strong><span>≈ 68 % d'un repas</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+            <div class="macro-chips">
+              <span style="--c: #f28f8f"><i></i>P 20 g</span>
+              <span style="--c: #38a38d"><i></i>G 48 g</span>
+              <span style="--c: #ecc94b"><i></i>L 18 g</span>
+              <span style="--c: #b28e63"><i></i>F 3 g</span>
+            </div>
+            <p class="dish-tip">
+              <strong>Complète avec</strong>
+              Protéines et fibres un peu justes : ajoute un yaourt ou un fromage blanc et un
+              fruit (+150 kcal). Tu arrives à ≈ 580 kcal avec un repas bien plus complet.
+            </p>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-head">
+              <span class="dish-icon" aria-hidden="true">🍚</span>
+              <div>
+                <h3>Riz-poulet</h3>
+                <p>Le classique : 150 g de poulet + riz</p>
+              </div>
+            </div>
+            <div class="dish-budget gauge" style="--c: #38a38d; --p: 82">
+              <div class="gauge-top"><strong>≈ 520 kcal</strong><span>≈ 82 % d'un repas</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+            <div class="macro-chips">
+              <span style="--c: #f28f8f"><i></i>P 42 g</span>
+              <span style="--c: #38a38d"><i></i>G 58 g</span>
+              <span style="--c: #ecc94b"><i></i>L 10 g</span>
+              <span style="--c: #b28e63"><i></i>F 3 g</span>
+            </div>
+            <p class="dish-tip">
+              <strong>Complète avec</strong>
+              Excellent pour les protéines, mais lipides et fibres au plancher : fais revenir
+              des légumes (courgettes, poivrons) dans 1 cuillère à soupe d'huile d'olive
+              (+120 kcal). Repas complet, cercles remplis.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card missing-macros" aria-labelledby="missing-title">
+        <div class="missing-intro">
+          <p class="eyebrow">Astuce cercles</p>
+          <h2 id="missing-title">Il te manque un cercle en fin de journée ?</h2>
+          <p>
+            Regarde quel cercle est encore vide dans Foodvisor et ajoute simplement l'un de ces
+            aliments « joker » à ton prochain repas ou à ton en-cas (budget : 211 kcal).
+          </p>
+        </div>
+        <div class="missing-grid">
+          <article style="--c: #f28f8f">
+            <h3>Protéines</h3>
+            <ul>
+              <li>2 œufs ou 1 œuf dur en encas</li>
+              <li>150 g de fromage blanc ou skyr</li>
+              <li>1 boîte de thon ou 100 g de poulet</li>
+            </ul>
+          </article>
+          <article style="--c: #38a38d">
+            <h3>Glucides</h3>
+            <ul>
+              <li>1 fruit (banane, pomme, poire)</li>
+              <li>1 tranche de pain complet</li>
+              <li>Une portion de riz ou patate douce en plus</li>
+            </ul>
+          </article>
+          <article style="--c: #ecc94b">
+            <h3>Lipides</h3>
+            <ul>
+              <li>½ avocat</li>
+              <li>Une poignée d'amandes ou de noix</li>
+              <li>1 cuillère d'huile d'olive ou de colza</li>
+            </ul>
+          </article>
+          <article style="--c: #b28e63">
+            <h3>Fibres</h3>
+            <ul>
+              <li>Des légumes en plus (crus ou cuits)</li>
+              <li>Lentilles, pois chiches, haricots rouges</li>
+              <li>Fruits rouges, kiwi, graines de chia</li>
+            </ul>
+          </article>
+        </div>
+        <p class="photo-credit">
+          Valeurs nutritionnelles approximatives (elles varient selon les enseignes et les
+          portions) : vérifie dans Foodvisor au moment du repas et ajuste.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Site d'accompagnement personnel — en savoir plus sur
+        <a href="https://www.foodvisor.io/fr/" target="_blank" rel="noopener">foodvisor.io</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

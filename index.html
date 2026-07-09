@@ -3,145 +3,312 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Assistant nutritionnel durable - Foodvisor</title>
+    <title>Foodvisor : l'application intelligente qui révolutionne le suivi alimentaire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <nav class="site-nav" aria-label="Navigation principale">
-        <a class="brand" href="index.html">Foodvisor <span>assistant</span></a>
-        <ul>
-          <li><a href="index.html" aria-current="page">Accueil</a></li>
-          <li><a href="exemples-repas.html">Exemples de repas</a></li>
-        </ul>
-      </nav>
+      <div class="site-nav">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 36 36">
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#38a38d" stroke-width="7" stroke-dasharray="35 88" transform="rotate(-90 18 18)" />
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#f28f8f" stroke-width="7" stroke-dasharray="27 88" stroke-dashoffset="-35" transform="rotate(-90 18 18)" />
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#ecc94b" stroke-width="7" stroke-dasharray="26 88" stroke-dashoffset="-62" transform="rotate(-90 18 18)" />
+            </svg>
+          </span>
+          Foodvisor <small>assistant</small>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="nav-menu" class="nav-menu" aria-label="Navigation principale">
+          <a href="index.html" aria-current="page">Accueil</a>
+          <a href="plats-du-quotidien.html">Plats du quotidien</a>
+          <a href="exemples-repas.html">Repas équilibrés</a>
+        </nav>
+      </div>
     </header>
 
     <main class="page-shell">
       <section class="hero" aria-labelledby="page-title">
         <div>
-          <p class="eyebrow">Foodvisor annuel activé</p>
-          <h1 id="page-title">Ton assistant pour perdre les 2 derniers kilos sans frustration</h1>
+          <p class="eyebrow">Suivi alimentaire intelligent</p>
+          <h1 id="page-title">Foodvisor : l'application intelligente qui révolutionne le suivi alimentaire</h1>
           <p class="intro">
-            Utilise Foodvisor comme un tableau de bord quotidien : comprendre tes repas,
-            garder le contrôle, te faire plaisir en quantité maîtrisée et suivre une
-            progression réaliste sur plusieurs mois.
+            Mieux manger sans se compliquer la vie. Suivre son alimentation peut rapidement
+            devenir contraignant : compter les calories, noter chaque repas ou rechercher les
+            valeurs nutritionnelles prend du temps et demande de la motivation. C'est
+            précisément pour répondre à ce problème que <strong>Foodvisor</strong> a été créé.
           </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://www.foodvisor.io/fr/" target="_blank" rel="noopener">Découvrir Foodvisor</a>
+            <a class="btn btn-secondary" href="plats-du-quotidien.html">Mes plats du quotidien</a>
+          </div>
         </div>
-        <aside class="progress-card" aria-label="Progression de poids">
-          <span>Départ</span>
-          <strong>75,5 kg</strong>
-          <span>Actuel</span>
-          <strong>64,5 kg</strong>
-          <span>Objectif restant</span>
-          <strong>-2 kg</strong>
-        </aside>
+        <div class="app-card" aria-label="Répartition des macros dans l'application">
+          <h3>Répartition des macros</h3>
+          <div class="donut">
+            <svg width="150" height="150" viewBox="0 0 100 100" role="img" aria-label="Anneau de répartition : glucides 38 %, protéines 30 %, lipides 30 %, fibres 2 %">
+              <circle cx="50" cy="50" r="40" fill="none" stroke="#eef3f8" stroke-width="14" />
+              <circle cx="50" cy="50" r="40" fill="none" stroke="#38a38d" stroke-width="14" stroke-dasharray="95.5 251.3" />
+              <circle cx="50" cy="50" r="40" fill="none" stroke="#f28f8f" stroke-width="14" stroke-dasharray="75.4 251.3" stroke-dashoffset="-95.5" />
+              <circle cx="50" cy="50" r="40" fill="none" stroke="#ecc94b" stroke-width="14" stroke-dasharray="75.4 251.3" stroke-dashoffset="-170.9" />
+              <circle cx="50" cy="50" r="40" fill="none" stroke="#b28e63" stroke-width="14" stroke-dasharray="5 251.3" stroke-dashoffset="-246.3" />
+            </svg>
+            <span class="donut-center">100%</span>
+          </div>
+          <div class="gauge-list">
+            <div class="gauge" style="--c: #ecc94b; --p: 30">
+              <div class="gauge-top"><strong>Lipides · 71 g</strong><span>30%</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+            <div class="gauge" style="--c: #f28f8f; --p: 30">
+              <div class="gauge-top"><strong>Protéines · 159 g</strong><span>30%</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+            <div class="gauge" style="--c: #38a38d; --p: 38">
+              <div class="gauge-top"><strong>Glucides · 201 g</strong><span>38%</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+            <div class="gauge" style="--c: #b28e63; --p: 8">
+              <div class="gauge-top"><strong>Fibres · 21 g</strong><span>2%</span></div>
+              <div class="gauge-bar"><i></i></div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="section-card objective" aria-labelledby="objective-title">
-        <div>
-          <p class="eyebrow">Objectif</p>
-          <h2 id="objective-title">Régularité avant perfection</h2>
-          <p>
-            Le but n’est pas de manger parfaitement tous les jours. Le vrai levier est de
-            rester régulier, d’éviter les excès répétés, de ne pas tomber dans la restriction
-            trop stricte et d’ajuster les portions si la tendance du poids stagne.
-          </p>
+      <section class="section-card" aria-labelledby="ia-title">
+        <p class="eyebrow">L'intelligence artificielle à table</p>
+        <h2 id="ia-title">Votre smartphone devient un assistant nutritionnel</h2>
+        <p>
+          Grâce à l'intelligence artificielle, cette application transforme votre smartphone en
+          véritable assistant nutritionnel. Une simple photo de votre assiette suffit pour
+          obtenir une estimation des aliments consommés, des calories et des principaux
+          nutriments. L'objectif n'est pas de suivre un régime strict, mais de comprendre
+          progressivement ses habitudes alimentaires afin de construire une alimentation plus
+          équilibrée.
+        </p>
+      </section>
+
+      <section class="section-card" aria-labelledby="fonctionnement-title">
+        <p class="eyebrow">Fonctionnement</p>
+        <h2 id="fonctionnement-title">Comment fonctionne Foodvisor ?</h2>
+        <p>
+          Le principe est particulièrement simple. Vous prenez une photo de votre repas et
+          l'intelligence artificielle analyse automatiquement son contenu. L'application
+          identifie les aliments présents, estime leurs quantités puis calcule les informations
+          nutritionnelles. Si nécessaire, vous pouvez corriger les portions ou modifier certains
+          aliments afin d'obtenir un résultat encore plus précis.
+        </p>
+        <p>L'application permet également d'ajouter ses repas de quatre façons :</p>
+        <div class="feature-grid">
+          <article>
+            <span class="icon" aria-hidden="true">📸</span>
+            <h3>Photo</h3>
+            <p>Une photo de l'assiette et l'IA identifie les aliments.</p>
+          </article>
+          <article>
+            <span class="icon" aria-hidden="true">📊</span>
+            <h3>Code-barres</h3>
+            <p>Scannez un produit pour récupérer sa fiche nutritionnelle.</p>
+          </article>
+          <article>
+            <span class="icon" aria-hidden="true">🔍</span>
+            <h3>Recherche</h3>
+            <p>Recherche manuelle dans une large base d'aliments.</p>
+          </article>
+          <article>
+            <span class="icon" aria-hidden="true">🎙️</span>
+            <h3>Vocal</h3>
+            <p>Dictez vos aliments grâce à la reconnaissance vocale.</p>
+          </article>
         </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="dashboard-title">
+        <p class="eyebrow">Suivi complet</p>
+        <h2 id="dashboard-title">Un véritable tableau de bord nutritionnel</h2>
+        <p>Au-delà du simple comptage des calories, Foodvisor suit de nombreux indicateurs :</p>
+        <ul class="chip-list">
+          <li>🔥 Calories quotidiennes</li>
+          <li>🍗 Protéines</li>
+          <li>🍚 Glucides</li>
+          <li>🥑 Lipides</li>
+          <li>🥦 Fibres</li>
+          <li>💊 Vitamines et minéraux (Premium)</li>
+          <li>💧 Consommation d'eau</li>
+          <li>⚖️ Évolution du poids</li>
+          <li>🏃 Activité physique</li>
+        </ul>
+        <p style="margin-top: 18px; margin-bottom: 0;">
+          Ces données permettent d'observer ses progrès sur plusieurs semaines et d'identifier
+          facilement les habitudes à améliorer.
+        </p>
+      </section>
+
+      <section class="section-card" aria-labelledby="objectifs-title">
+        <p class="eyebrow">Personnalisation</p>
+        <h2 id="objectifs-title">Des objectifs personnalisés</h2>
+        <div class="split">
+          <div>
+            <p>Lors de la première utilisation, l'application vous pose plusieurs questions :</p>
+            <ul class="chip-list">
+              <li>Âge</li>
+              <li>Taille</li>
+              <li>Poids</li>
+              <li>Niveau d'activité</li>
+              <li>Objectif recherché</li>
+            </ul>
+          </div>
+          <div>
+            <p>Que votre but soit de :</p>
+            <ul class="chip-list">
+              <li>Perdre du poids</li>
+              <li>Maintenir votre forme</li>
+              <li>Prendre de la masse musculaire</li>
+              <li>Manger plus équilibré</li>
+            </ul>
+          </div>
+        </div>
+        <p style="margin-top: 18px; margin-bottom: 0;">
+          Foodvisor adapte automatiquement vos objectifs caloriques ainsi que la répartition des
+          macronutriments.
+        </p>
+      </section>
+
+      <section class="section-card" aria-labelledby="habitudes-title">
+        <p class="eyebrow">Pédagogie</p>
+        <h2 id="habitudes-title">Une application qui apprend de vos habitudes</h2>
+        <p>
+          L'un des points forts de Foodvisor réside dans son approche pédagogique. Au lieu de
+          culpabiliser l'utilisateur, l'application cherche à construire de meilleures habitudes
+          sur le long terme. Elle propose notamment :
+        </p>
         <ul class="check-list">
-          <li>Repas simples, rassasiants et équilibrés.</li>
-          <li>Plaisirs alimentaires autorisés, mais planifiés.</li>
-          <li>Poids analysé sur la semaine, pas au jour le jour.</li>
-          <li>Corrections progressives sans culpabiliser.</li>
+          <li>Des conseils personnalisés</li>
+          <li>Des analyses quotidiennes</li>
+          <li>Des recettes adaptées</li>
+          <li>Des articles rédigés par des experts</li>
+          <li>Des cours sur la nutrition et la motivation</li>
+        </ul>
+        <p style="margin-top: 18px; margin-bottom: 0;">
+          Cette philosophie permet d'éviter les régimes trop restrictifs souvent difficiles à
+          maintenir.
+        </p>
+      </section>
+
+      <section class="section-card" aria-labelledby="premium-title">
+        <p class="eyebrow">Formules</p>
+        <h2 id="premium-title">Version gratuite ou Premium ?</h2>
+        <div class="plan-grid">
+          <article class="plan">
+            <span class="price-tag">Gratuite</span>
+            <h3>Pour commencer</h3>
+            <ul>
+              <li>Suivi de son alimentation au quotidien</li>
+              <li>Enregistrement manuel des repas</li>
+              <li>Compteur de calories et de macros</li>
+            </ul>
+          </article>
+          <article class="plan premium">
+            <span class="price-tag">Premium</span>
+            <h3>Pour aller plus loin</h3>
+            <ul>
+              <li>Analyse automatique des repas par photo</li>
+              <li>Analyse nutritionnelle plus détaillée</li>
+              <li>Des centaines de recettes</li>
+              <li>Programmes alimentaires personnalisés</li>
+              <li>Séances de sport</li>
+              <li>Bilans quotidiens</li>
+              <li>Recommandations plus poussées</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="avantages-title">
+        <p class="eyebrow">Points forts</p>
+        <h2 id="avantages-title">Les avantages de Foodvisor</h2>
+        <ul class="check-list">
+          <li>Interface moderne et intuitive</li>
+          <li>Analyse rapide grâce à l'intelligence artificielle</li>
+          <li>Suivi complet des calories et des macronutriments</li>
+          <li>Objectifs personnalisés</li>
+          <li>Historique détaillé de votre progression</li>
+          <li>Synchronisation avec Apple Santé ou Google Fit selon votre appareil</li>
         </ul>
       </section>
 
-      <section class="analysis-grid" aria-label="Analyse quotidienne des repas">
-        <article class="analysis-card highlight">
-          <h2>Est-ce que ce repas est compatible avec ton objectif ?</h2>
-          <p>
-            Oui s’il contient une bonne base de protéines, des légumes ou fibres, une portion
-            de féculents adaptée à ta faim et une quantité raisonnable de matières grasses.
-            Un repas plus riche peut aussi être compatible si le reste de la journée reste
-            simple et que la semaine garde une tendance cohérente.
-          </p>
-          <p class="tip">Repère Foodvisor : vérifie surtout le total de la journée et la moyenne hebdomadaire.</p>
-        </article>
-
-        <article class="analysis-card">
-          <h2>Peux-tu te faire plaisir aujourd’hui ?</h2>
-          <p>
-            Oui, si le plaisir a une vraie place dans ta journée : une portion choisie,
-            dégustée, puis un retour normal à l’équilibre. Évite seulement de cumuler plusieurs
-            extras le même jour sans ajuster les portions des autres repas.
-          </p>
-        </article>
-
-        <article class="analysis-card">
-          <h2>Trop manger ou trop te restreindre ?</h2>
-          <p>
-            Tu manges probablement trop si tu finis souvent lourd, si les extras s’enchaînent
-            ou si les portions augmentent sans faim réelle. Tu te restreins trop si tu as faim
-            trop vite, si tu évites systématiquement féculents et plaisirs, ou si la fatigue
-            augmente.
-          </p>
-        </article>
-
-        <article class="analysis-card">
-          <h2>Quoi ajuster pour perdre encore 2 kg ?</h2>
-          <p>
-            Commence par de petits réglages : un peu plus de légumes, une source de protéines
-            à chaque repas, des féculents proportionnés à l’activité, moins de sauces riches et
-            une collation seulement si elle répond à une vraie faim.
-          </p>
-        </article>
+      <section class="section-card" aria-labelledby="limites-title">
+        <p class="eyebrow">En toute transparence</p>
+        <h2 id="limites-title">Les limites à connaître</h2>
+        <p>
+          Comme toutes les applications utilisant la reconnaissance d'image, Foodvisor n'est pas
+          infaillible. Les plats très élaborés, les sauces, les huiles de cuisson ou certaines
+          préparations maison peuvent être estimés de manière approximative. Il reste donc
+          conseillé de vérifier les portions et de corriger les informations lorsque cela est
+          nécessaire.
+        </p>
+        <p class="notice">
+          Les retours de la communauté montrent que la précision est meilleure lorsque les repas
+          sont simples et que l'utilisateur ajuste manuellement les quantités si besoin.
+        </p>
       </section>
 
-      <section class="method" aria-labelledby="method-title">
-        <p class="eyebrow">Méthode Foodvisor</p>
-        <h2 id="method-title">Le contrôle intelligent en 5 questions</h2>
-        <div class="question-list">
-          <article>
-            <span>1</span>
-            <h3>Qualité globale</h3>
-            <p>Le repas est-il majoritairement composé d’aliments simples et nourrissants ?</p>
-          </article>
-          <article>
-            <span>2</span>
-            <h3>Satiété</h3>
-            <p>Est-ce que je serai rassasié plusieurs heures sans sensation de lourdeur ?</p>
-          </article>
-          <article>
-            <span>3</span>
-            <h3>Équilibre</h3>
-            <p>Ai-je protéines, légumes, féculents et bonnes graisses dans des portions cohérentes ?</p>
-          </article>
-          <article>
-            <span>4</span>
-            <h3>Plaisir</h3>
-            <p>Mon plaisir est-il choisi et maîtrisé, ou ajouté par automatisme ?</p>
-          </article>
-          <article>
-            <span>5</span>
-            <h3>Tendance</h3>
-            <p>Ce choix aide-t-il ma moyenne de la semaine à rester compatible avec -2 kg ?</p>
-          </article>
-        </div>
+      <section class="section-card" aria-labelledby="cible-title">
+        <p class="eyebrow">Public</p>
+        <h2 id="cible-title">À qui s'adresse Foodvisor ?</h2>
+        <p>Foodvisor est particulièrement adapté :</p>
+        <ul class="check-list">
+          <li>Aux personnes souhaitant perdre du poids</li>
+          <li>Aux sportifs qui suivent leurs apports nutritionnels</li>
+          <li>Aux personnes qui souhaitent simplement mieux manger</li>
+          <li>À celles qui recherchent une solution simple et rapide pour suivre leur alimentation</li>
+        </ul>
+        <p style="margin-top: 18px; margin-bottom: 0;">
+          Son fonctionnement intuitif permet une prise en main très rapide, même sans
+          connaissances en nutrition.
+        </p>
       </section>
 
-      <section class="section-card subscription" aria-labelledby="subscription-title">
-        <div>
-          <p class="eyebrow">Engagement annuel</p>
-          <h2 id="subscription-title">Transformer l’abonnement en routine utile</h2>
-          <p>
-            Ton abonnement annuel doit servir à observer, apprendre et corriger. Enregistre tes
-            repas, compare les journées, repère les situations où tu dépasses souvent, puis fais
-            un ajustement simple à la fois. Foodvisor devient alors un coach de régularité, pas
-            un outil de jugement.
-          </p>
-        </div>
-        <a class="cta" href="#method-title">Analyser mon prochain repas</a>
+      <section class="section-card avis" aria-labelledby="avis-title">
+        <p class="eyebrow">Notre avis</p>
+        <h2 id="avis-title">Une solution moderne, efficace et accessible</h2>
+        <p>
+          Foodvisor fait aujourd'hui partie des applications de nutrition les plus complètes
+          disponibles sur smartphone. Son intelligence artificielle simplifie considérablement
+          le suivi alimentaire et rend cette tâche beaucoup moins contraignante qu'avec un
+          journal classique.
+        </p>
+        <p>
+          L'application ne remplace évidemment pas les conseils d'un professionnel de santé ou
+          d'un diététicien, mais elle constitue un excellent outil pour prendre conscience de
+          ses habitudes alimentaires, suivre ses progrès et adopter progressivement un mode de
+          vie plus équilibré. Pour les personnes qui souhaitent reprendre leur alimentation en
+          main sans passer des heures à compter chaque calorie, Foodvisor représente une
+          solution moderne, efficace et accessible.
+        </p>
+        <a class="btn btn-primary" href="https://www.foodvisor.io/fr/" target="_blank" rel="noopener">Visiter foodvisor.io</a>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>
+        Site d'accompagnement personnel — en savoir plus sur
+        <a href="https://www.foodvisor.io/fr/" target="_blank" rel="noopener">foodvisor.io</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
