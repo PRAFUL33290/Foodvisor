@@ -4,21 +4,42 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Exemples de repas équilibrés - Foodvisor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <nav class="site-nav" aria-label="Navigation principale">
-        <a class="brand" href="index.html">Foodvisor <span>assistant</span></a>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="exemples-repas.html" aria-current="page">Exemples de repas</a></li>
-        </ul>
-      </nav>
+      <div class="site-nav">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 36 36">
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#38a38d" stroke-width="7" stroke-dasharray="35 88" transform="rotate(-90 18 18)" />
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#f28f8f" stroke-width="7" stroke-dasharray="27 88" stroke-dashoffset="-35" transform="rotate(-90 18 18)" />
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#ecc94b" stroke-width="7" stroke-dasharray="26 88" stroke-dashoffset="-62" transform="rotate(-90 18 18)" />
+            </svg>
+          </span>
+          Foodvisor <small>assistant</small>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="nav-menu" class="nav-menu" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="plats-du-quotidien.html">Plats du quotidien</a>
+          <a href="exemples-repas.html" aria-current="page">Repas équilibrés</a>
+        </nav>
+      </div>
     </header>
 
     <main class="page-shell">
-      <section class="hero meals-hero" aria-labelledby="page-title">
+      <section class="hero" aria-labelledby="page-title">
         <div>
           <p class="eyebrow">Inspiration repas</p>
           <h1 id="page-title">Des repas simples qui remplissent tous tes cercles</h1>
@@ -28,11 +49,11 @@
             quand l’inspiration manque.
           </p>
         </div>
-        <aside class="progress-card" aria-label="Repères de la journée">
-          <span>Protéines</span>
-          <strong>≈ 100 g / jour</strong>
-          <span>Fibres</span>
-          <strong>≈ 30 g / jour</strong>
+        <aside class="goals-card" aria-label="Repères de la journée">
+          <span>Objectif calorique</span>
+          <strong>2119 kcal / jour</strong>
+          <span>Macros du jour</span>
+          <strong>P 159 · G 201 · L 71 · F 21</strong>
           <span>Répartition</span>
           <strong>4 repas</strong>
         </aside>
@@ -68,19 +89,19 @@
               </ul>
               <p class="meal-kcal">≈ 460 kcal</p>
               <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 75; --c: #d95d63">
+                <div class="macro" role="listitem" style="--p: 75; --c: #f28f8f">
                   <span class="ring"><b>22 g</b></span>
                   <span class="macro-label">Protéines</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 60; --c: #e8a13c">
+                <div class="macro" role="listitem" style="--p: 60; --c: #38a38d">
                   <span class="ring"><b>38 g</b></span>
                   <span class="macro-label">Glucides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 80; --c: #7a5cd6">
+                <div class="macro" role="listitem" style="--p: 80; --c: #ecc94b">
                   <span class="ring"><b>20 g</b></span>
                   <span class="macro-label">Lipides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 70; --c: #2f8f5b">
+                <div class="macro" role="listitem" style="--p: 70; --c: #b28e63">
                   <span class="ring"><b>9 g</b></span>
                   <span class="macro-label">Fibres</span>
                 </div>
@@ -107,19 +128,19 @@
               </ul>
               <p class="meal-kcal">≈ 390 kcal</p>
               <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 70; --c: #d95d63">
+                <div class="macro" role="listitem" style="--p: 70; --c: #f28f8f">
                   <span class="ring"><b>21 g</b></span>
                   <span class="macro-label">Protéines</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 65; --c: #e8a13c">
+                <div class="macro" role="listitem" style="--p: 65; --c: #38a38d">
                   <span class="ring"><b>42 g</b></span>
                   <span class="macro-label">Glucides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 55; --c: #7a5cd6">
+                <div class="macro" role="listitem" style="--p: 55; --c: #ecc94b">
                   <span class="ring"><b>13 g</b></span>
                   <span class="macro-label">Lipides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 60; --c: #2f8f5b">
+                <div class="macro" role="listitem" style="--p: 60; --c: #b28e63">
                   <span class="ring"><b>8 g</b></span>
                   <span class="macro-label">Fibres</span>
                 </div>
@@ -158,19 +179,19 @@
               </ul>
               <p class="meal-kcal">≈ 520 kcal</p>
               <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 95; --c: #d95d63">
+                <div class="macro" role="listitem" style="--p: 95; --c: #f28f8f">
                   <span class="ring"><b>38 g</b></span>
                   <span class="macro-label">Protéines</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 70; --c: #e8a13c">
+                <div class="macro" role="listitem" style="--p: 70; --c: #38a38d">
                   <span class="ring"><b>46 g</b></span>
                   <span class="macro-label">Glucides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 70; --c: #7a5cd6">
+                <div class="macro" role="listitem" style="--p: 70; --c: #ecc94b">
                   <span class="ring"><b>17 g</b></span>
                   <span class="macro-label">Lipides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 80; --c: #2f8f5b">
+                <div class="macro" role="listitem" style="--p: 80; --c: #b28e63">
                   <span class="ring"><b>10 g</b></span>
                   <span class="macro-label">Fibres</span>
                 </div>
@@ -197,19 +218,19 @@
               </ul>
               <p class="meal-kcal">≈ 490 kcal</p>
               <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 85; --c: #d95d63">
+                <div class="macro" role="listitem" style="--p: 85; --c: #f28f8f">
                   <span class="ring"><b>33 g</b></span>
                   <span class="macro-label">Protéines</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 62; --c: #e8a13c">
+                <div class="macro" role="listitem" style="--p: 62; --c: #38a38d">
                   <span class="ring"><b>40 g</b></span>
                   <span class="macro-label">Glucides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 78; --c: #7a5cd6">
+                <div class="macro" role="listitem" style="--p: 78; --c: #ecc94b">
                   <span class="ring"><b>20 g</b></span>
                   <span class="macro-label">Lipides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 72; --c: #2f8f5b">
+                <div class="macro" role="listitem" style="--p: 72; --c: #b28e63">
                   <span class="ring"><b>9 g</b></span>
                   <span class="macro-label">Fibres</span>
                 </div>
@@ -248,19 +269,19 @@
               </ul>
               <p class="meal-kcal">≈ 160 kcal</p>
               <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 45; --c: #d95d63">
+                <div class="macro" role="listitem" style="--p: 45; --c: #f28f8f">
                   <span class="ring"><b>13 g</b></span>
                   <span class="macro-label">Protéines</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 30; --c: #e8a13c">
+                <div class="macro" role="listitem" style="--p: 30; --c: #38a38d">
                   <span class="ring"><b>18 g</b></span>
                   <span class="macro-label">Glucides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 15; --c: #7a5cd6">
+                <div class="macro" role="listitem" style="--p: 15; --c: #ecc94b">
                   <span class="ring"><b>3 g</b></span>
                   <span class="macro-label">Lipides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 35; --c: #2f8f5b">
+                <div class="macro" role="listitem" style="--p: 35; --c: #b28e63">
                   <span class="ring"><b>4 g</b></span>
                   <span class="macro-label">Fibres</span>
                 </div>
@@ -286,19 +307,19 @@
               </ul>
               <p class="meal-kcal">≈ 240 kcal</p>
               <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 20; --c: #d95d63">
+                <div class="macro" role="listitem" style="--p: 20; --c: #f28f8f">
                   <span class="ring"><b>5 g</b></span>
                   <span class="macro-label">Protéines</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 42; --c: #e8a13c">
+                <div class="macro" role="listitem" style="--p: 42; --c: #38a38d">
                   <span class="ring"><b>28 g</b></span>
                   <span class="macro-label">Glucides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 48; --c: #7a5cd6">
+                <div class="macro" role="listitem" style="--p: 48; --c: #ecc94b">
                   <span class="ring"><b>12 g</b></span>
                   <span class="macro-label">Lipides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 40; --c: #2f8f5b">
+                <div class="macro" role="listitem" style="--p: 40; --c: #b28e63">
                   <span class="ring"><b>5 g</b></span>
                   <span class="macro-label">Fibres</span>
                 </div>
@@ -338,19 +359,19 @@
               </ul>
               <p class="meal-kcal">≈ 400 kcal</p>
               <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 82; --c: #d95d63">
+                <div class="macro" role="listitem" style="--p: 82; --c: #f28f8f">
                   <span class="ring"><b>32 g</b></span>
                   <span class="macro-label">Protéines</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 55; --c: #e8a13c">
+                <div class="macro" role="listitem" style="--p: 55; --c: #38a38d">
                   <span class="ring"><b>35 g</b></span>
                   <span class="macro-label">Glucides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 42; --c: #7a5cd6">
+                <div class="macro" role="listitem" style="--p: 42; --c: #ecc94b">
                   <span class="ring"><b>10 g</b></span>
                   <span class="macro-label">Lipides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 65; --c: #2f8f5b">
+                <div class="macro" role="listitem" style="--p: 65; --c: #b28e63">
                   <span class="ring"><b>8 g</b></span>
                   <span class="macro-label">Fibres</span>
                 </div>
@@ -377,19 +398,19 @@
               </ul>
               <p class="meal-kcal">≈ 430 kcal</p>
               <div class="macro-row" role="list" aria-label="Apports nutritionnels">
-                <div class="macro" role="listitem" style="--p: 65; --c: #d95d63">
+                <div class="macro" role="listitem" style="--p: 65; --c: #f28f8f">
                   <span class="ring"><b>25 g</b></span>
                   <span class="macro-label">Protéines</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 58; --c: #e8a13c">
+                <div class="macro" role="listitem" style="--p: 58; --c: #38a38d">
                   <span class="ring"><b>38 g</b></span>
                   <span class="macro-label">Glucides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 64; --c: #7a5cd6">
+                <div class="macro" role="listitem" style="--p: 64; --c: #ecc94b">
                   <span class="ring"><b>16 g</b></span>
                   <span class="macro-label">Lipides</span>
                 </div>
-                <div class="macro" role="listitem" style="--p: 95; --c: #2f8f5b">
+                <div class="macro" role="listitem" style="--p: 95; --c: #b28e63">
                   <span class="ring"><b>12 g</b></span>
                   <span class="macro-label">Fibres</span>
                 </div>
@@ -409,7 +430,7 @@
           </p>
         </div>
         <div class="missing-grid">
-          <article style="--c: #d95d63">
+          <article style="--c: #f28f8f">
             <h3>Protéines</h3>
             <ul>
               <li>2 œufs ou 1 œuf dur en encas</li>
@@ -417,7 +438,7 @@
               <li>1 boîte de thon ou 100 g de poulet</li>
             </ul>
           </article>
-          <article style="--c: #e8a13c">
+          <article style="--c: #38a38d">
             <h3>Glucides</h3>
             <ul>
               <li>1 fruit (banane, pomme, poire)</li>
@@ -425,7 +446,7 @@
               <li>Une portion de riz ou patate douce en plus</li>
             </ul>
           </article>
-          <article style="--c: #7a5cd6">
+          <article style="--c: #ecc94b">
             <h3>Lipides</h3>
             <ul>
               <li>½ avocat</li>
@@ -433,7 +454,7 @@
               <li>1 cuillère d’huile d’olive ou de colza</li>
             </ul>
           </article>
-          <article style="--c: #2f8f5b">
+          <article style="--c: #b28e63">
             <h3>Fibres</h3>
             <ul>
               <li>Des légumes en plus (crus ou cuits)</li>
@@ -448,5 +469,14 @@
         </p>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>
+        Site d'accompagnement personnel — en savoir plus sur
+        <a href="https://www.foodvisor.io/fr/" target="_blank" rel="noopener">foodvisor.io</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
